@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isImagePickerShowing = false
+    @State var selectedImage: UIImage?
+    @State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Image(uiImage: selectedImage ?? UIImage(named: "cameraPic")!)
+                .resizable()
+                .frame(width: 360, height: 360)
+            
+            HStack{
+                Button(action: {
+                    isImagePickerShowing = true
+                }) {
+                    Text("Select a Photo")
+                    
+                }
+            }
         }
         .padding()
+        
+        .sheet(isPresented: $isImagePickerShowing) {
+            ImagePicker(isImagePickerShowing: $isImagePickerShowing, selectedImage: $selectedImage)
+                }
     }
 }
 

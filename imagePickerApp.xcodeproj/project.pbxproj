@@ -11,6 +11,7 @@
 		B242F5D12A22A0E900203EEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B242F5D02A22A0E900203EEB /* ContentView.swift */; };
 		B242F5D32A22A0EB00203EEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B242F5D22A22A0EB00203EEB /* Assets.xcassets */; };
 		B242F5D62A22A0EB00203EEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B242F5D52A22A0EB00203EEB /* Preview Assets.xcassets */; };
+		B242F5DD2A22A24D00203EEB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B242F5DC2A22A24D00203EEB /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B242F5D02A22A0E900203EEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B242F5D22A22A0EB00203EEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B242F5D52A22A0EB00203EEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B242F5DC2A22A24D00203EEB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				B242F5CE2A22A0E900203EEB /* imagePickerAppApp.swift */,
 				B242F5D02A22A0E900203EEB /* ContentView.swift */,
+				B242F5DC2A22A24D00203EEB /* ImagePicker.swift */,
 				B242F5D22A22A0EB00203EEB /* Assets.xcassets */,
 				B242F5D42A22A0EB00203EEB /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B242F5DD2A22A24D00203EEB /* ImagePicker.swift in Sources */,
 				B242F5D12A22A0E900203EEB /* ContentView.swift in Sources */,
 				B242F5CF2A22A0E900203EEB /* imagePickerAppApp.swift in Sources */,
 			);
@@ -269,6 +273,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"imagePickerApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +302,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"imagePickerApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
